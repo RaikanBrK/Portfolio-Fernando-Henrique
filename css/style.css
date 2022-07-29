@@ -1,3 +1,12 @@
+/*** Gerais */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container-custom {
+  margin: 50px auto;
+}
+
 /*** Header */
 #headerPrincipal {
   background-color: #fdfdfd;
@@ -41,3 +50,32 @@
   height: 2px;
 }
 /*** Fim Header */
+
+/*** Conteúdo */
+.title-section {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 28px;
+
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  margin-bottom: 25px;
+}
+
+.list-no-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+/*** Fim Conteúdo */
+
+/*** Media Queries */
+@media (min-width: 992px) {
+  .container-custom {
+    max-width: 1000px;
+  }
+}

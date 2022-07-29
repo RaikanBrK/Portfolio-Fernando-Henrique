@@ -1,0 +1,33 @@
+/*** Habilidades */
+#skills .card {
+  background-color: #f8f8f8;
+  border: 1px solid #b79e9e26;
+  border-radius: 10px;
+
+  height: 100%;
+
+  padding: 10px;
+}
+
+#skills .card-img-top {
+  width: 160px;
+  margin: auto;
+}
+
+#skills .card-body {
+  padding: 0;
+}
+
+#skills .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #120e0e;
+
+  text-align: center;
+
+  margin: 15px 0;
+}
+
+#skills .card-list li {
+  font-size: 14px;
+}

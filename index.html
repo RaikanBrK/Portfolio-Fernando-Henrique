@@ -13,6 +13,7 @@
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,6 +58,92 @@
       </div>
     </nav>
   </header>
+
+  <main id="skills">
+    <div class="container container-custom">
+      <h1 class="title-section">Habilidades</h1>
+
+      <!-- 
+        Sistema de Grid
+        Em dispositivos pequenos usar 1 coluna (celular)
+        Em dispositivos médios usar 2 colunas (tablets)
+        Em dispositivos grande ou maior usar 3 colunas (notebooks, desktop)
+       -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+        <!-- Card Frond-end -->
+        <div class="col">
+          <div class="card">
+            <img src="images/frond_end.png" class="card-img-top" alt="Layout Web Site">
+            <div class="card-body">
+              <h5 class="card-title">Tecnologias Frond-end</h5>
+              <ul class="list-no-style card-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Back-end -->
+        <div class="col">
+          <div class="card">
+            <img src="images/back_end.png" class="card-img-top" alt="Código Web Site">
+            <div class="card-body">
+              <h5 class="card-title">Tecnologias Back-end</h5>
+              <ul class="list-no-style card-list">
+                <li>C++</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Frameworks -->
+        <div class="col">
+          <div class="card">
+            <img src="images/frameworks.png" class="card-img-top" alt="Ferramentas de Desenvolvimento">
+            <div class="card-body">
+              <h5 class="card-title">Frameworks</h5>
+              <ul class="list-no-style card-list">
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Idiomas -->
+        <div class="col">
+          <div class="card">
+            <img src="images/idiomas.png" class="card-img-top" alt="Idiomas">
+            <div class="card-body">
+              <h5 class="card-title">Idiomas</h5>
+              <ul class="list-no-style card-list">
+                <li>Inglês - Básico</li>
+                <li>Espanhol - Básico</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Office -->
+        <div class="col">
+          <div class="card">
+            <img src="images/office.png" class="card-img-top" alt="Lista">
+            <div class="card-body">
+              <h5 class="card-title">Pacote Office</h5>
+              <ul class="list-no-style card-list">
+                <li>Word</li>
+                <li>Excel</li>
+                <li>PowerPoint</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- Bootstrap 5 - JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
