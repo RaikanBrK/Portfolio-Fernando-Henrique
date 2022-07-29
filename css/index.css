@@ -31,3 +31,26 @@
 #skills .card-list li {
   font-size: 14px;
 }
+
+/* Formação */
+#formacao .list-group-item {
+  background-color: #fff8f8;
+  border-radius: 10px;
+
+  margin-top: 15px;
+  border: 1px solid #455a6412;
+}
+
+#formacao .formacao-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#formacao .title-item {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
