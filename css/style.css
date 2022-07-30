@@ -87,7 +87,7 @@ footer {
 }
 
 /*** Media Queries */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .container-custom {
     max-width: 1000px;
   }
