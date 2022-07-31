@@ -79,7 +79,7 @@ if (search.name && search.email && search.subject && search.message) {
   showAlert("Mensagem enviada com sucesso");
 
   // Removendo parâmetros da url
-  window.history.replaceState({}, document.title, "/" + "contact.html");
+  window.history.replaceState({}, document.title, window.location.pathname);
 }
 
 /**
