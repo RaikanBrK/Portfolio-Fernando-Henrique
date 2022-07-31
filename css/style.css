@@ -100,3 +100,13 @@ footer {
     max-width: 1000px;
   }
 }
+
+/* Media Queries (Tablets ou menor) */
+@media (max-width: 767.98px) {
+  /* Fazendo mensagem ficar centralizada no final da página */
+  .toast-container {
+    bottom: 10px;
+    left: 0;
+    margin: auto;
+  }
+}
