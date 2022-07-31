@@ -24,35 +24,35 @@
 </head>
 
 <body>
-  <header id="headerPrincipal">
+  <header id="mainHeader">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="index.html">Fernando Henrique</a>
 
         <!-- Hamburger button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuPrincipal"
-          aria-controls="navbarMenuPrincipal" aria-expanded="false" aria-label="Alternar Navegação">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu"
+          aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Alternar Navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarMenuPrincipal">
+        <div class="collapse navbar-collapse" id="navbarMainMenu">
           <ul class="navbar-nav ms-auto my-1 my-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sobre_mim.html">Sobre mim</a>
+              <a class="nav-link" href="about.html">Sobre mim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="formacao.html">Formação</a>
+              <a class="nav-link" href="formation.html">Formação</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfólio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active disabled" aria-current="page" href="contato.html">Contato</a>
+              <a class="nav-link active disabled" aria-current="page" href="contact.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -77,18 +77,20 @@
     </div>
   </div>
 
+  <!-- Seção de Contato -->
   <main>
     <div class="container container-custom">
       <h1 class="title-section">Contato</h1>
 
       <div class="container">
+        <!-- Separando em duas colunas -->
         <div class="row" id="contact">
 
           <!-- Coluna com informações -->
           <div class="col-md-5" id="contactInfo">
             <h2 class="title-contact">Informações de Contato</h2>
 
-            <!-- Lista coma as informações -->
+            <!-- Lista com as informações -->
             <ul class="list-contact list-no-style pt-1 pt-sm-2">
               <li>
                 <img src="images/email.png" alt="email" class="icon-contact-item">
@@ -107,7 +109,7 @@
 
           <!-- Coluna com o formulário -->
           <div class="col-md-7" id="formContact">
-            <form class="row g-3" action="contato.html" method="get" autocomplete="off">
+            <form class="row g-3" action="contact.html" method="get" autocomplete="off">
 
               <!-- Campo Nome Completo -->
               <div class=" col-12 col-sm-6">
@@ -127,8 +129,8 @@
 
               <!-- Campo Assunto -->
               <div class="col-12">
-                <label for="assunto" class="form-label">Assunto</label>
-                <input type="text" class="form-control" id="assunto" name="assunto" required>
+                <label for="subject" class="form-label">Assunto</label>
+                <input type="text" class="form-control" id="subject" name="subject" required>
                 <div class="invalid-feedback">
                 </div>
               </div>
@@ -136,7 +138,7 @@
               <!-- Campo Mensagem -->
               <div class="col-12">
                 <label for="message" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="message" rows="6" name="message" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
                 <div class="invalid-feedback">
                 </div>
               </div>

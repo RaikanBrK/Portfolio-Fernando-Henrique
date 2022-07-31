@@ -5,13 +5,13 @@ const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
 
 // Elemento HTML do assunto
-const inputAssunto = document.getElementById("assunto");
+const inputSubject = document.getElementById("subject");
 
 // Elemento HTML da mensagem
 const inputMessage = document.getElementById("message");
 
 // Elemento HTML do botão
-const botaoForm = document.getElementById("sendForm");
+const buttonForm = document.getElementById("sendForm");
 
 // Elemento HTML do alert do Bootstrap
 const containerAlert = document.getElementById("containerAlert");
@@ -35,13 +35,13 @@ if (window.location.search) {
    * Remove o carácter '?'
    * Retorna uma array separando os elementos pelo carácter '&'
    */
-  let dadosUrl = decodeURI(window.location.search.replace("?", "")).split("&");
+  let dataUrl = decodeURI(window.location.search.replace("?", "")).split("&");
 
   /**
    * Verificar todos os parâmetros e armazenar na variável de parâmetros GET
    */
-  dadosUrl.forEach((dados) => {
-    let values = dados.split("=");
+  dataUrl.forEach((data) => {
+    let values = data.split("=");
     search[values[0]] = values[1];
   });
 }
@@ -74,12 +74,12 @@ function showAlert(text, background = "bg-success", option = null) {
 }
 
 // Verificando se tem os campos na url
-if (search.name && search.email && search.assunto && search.message) {
+if (search.name && search.email && search.subject && search.message) {
   // Enviando mensagem de sucesso
   showAlert("Mensagem enviada com sucesso");
 
   // Removendo parâmetros da url
-  window.history.replaceState({}, document.title, "/" + "contato.html");
+  window.history.replaceState({}, document.title, "/" + "contact.html");
 }
 
 /**
@@ -144,7 +144,7 @@ function addSuccess(input, msgError) {
   let id = input.id;
 
   // Verificando se existe um erro com o input
-  if (errorInput[id] == undefined) {
+  if (errorInput[id]) {
     // Removendo erro do input com o filter
     errorInput[id] = errorInput[id].filter((msg) => msg != msgError);
 
@@ -208,12 +208,12 @@ function minCaracteres(input, min, msgError) {
 
 function sendForm(event) {
   // Filtrando os erros vazios
-  const erros = Object.keys(errorInput).filter(
+  let error = Object.keys(errorInput).filter(
     (key) => errorInput[key].length >= 1
   );
 
   // Verificar se existe algum erro após a filtragem
-  if (erros.length > 0) {
+  if (error.length > 0) {
     // Desativando eventos
     event.preventDefault();
 
@@ -239,10 +239,10 @@ inputEmail.addEventListener("input", (e) =>
 );
 
 // Adicionando evento ao perde o foco do input assunto
-inputAssunto.addEventListener("blur", onBlur);
+inputSubject.addEventListener("blur", onBlur);
 
 // Adicionando evento ao mudar o input assunto verificando a quantidade de caráteres
-inputAssunto.addEventListener("input", (e) =>
+inputSubject.addEventListener("input", (e) =>
   minCaracteres(e.target, 6, "O assunto é muito pequeno")
 );
 
@@ -255,4 +255,4 @@ inputMessage.addEventListener("input", (e) =>
 );
 
 // Adicionando evento ao clicar do botão de enviar formulário
-botaoForm.addEventListener("click", sendForm);
+buttonForm.addEventListener("click", sendForm);
