@@ -19,7 +19,7 @@ body {
 }
 
 /** Menu Principal */
-#navbarMenuPrincipal .nav-link {
+#navbarMainMenu .nav-link {
   font-family: "Roboto", sans-serif;
 
   font-size: 0.9rem;
@@ -32,17 +32,17 @@ body {
 }
 
 /* Alterar color do link ativo */
-#navbarMenuPrincipal .nav-link.active {
+#navbarMainMenu .nav-link.active {
   color: #000000;
 }
 
 /* Alterar cor do link ao passar o mouse */
-#navbarMenuPrincipal .nav-link:hover {
+#navbarMainMenu .nav-link:hover {
   color: #121111ae;
 }
 
 /* Criar um conteúdo vazio após o link ativo */
-#navbarMenuPrincipal .nav-link.active:after {
+#navbarMainMenu .nav-link.active:after {
   content: "";
   display: block;
   background-color: #afc9a7;

@@ -33,7 +33,7 @@
 }
 
 /* Formação */
-#formacao .list-group-item {
+#formation .list-group-item {
   background-color: #fff8f8;
   border-radius: 10px;
 
@@ -41,13 +41,13 @@
   border: 1px solid #455a6412;
 }
 
-#formacao .formacao-item {
+#formation .formation-item {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-#formacao .title-item {
+#formation .title-item {
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
