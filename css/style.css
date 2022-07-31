@@ -70,6 +70,15 @@ body {
 
   list-style: none;
 }
+
+/** Mensagem do Bootstrap */
+#toast {
+  position: relative;
+}
+
+.toast-container {
+  min-height: 50px;
+}
 /*** Fim Conteúdo */
 
 /*** Rodapé */
