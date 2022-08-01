@@ -3,3 +3,56 @@
   line-height: 30px;
   text-align: justify;
 }
+
+/* Titulo com imagem de background */
+.backgroud-title {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover !important;
+}
+
+/* Sobreposição de estilo para melhor visualização com a imagem de background */
+.backgroud-title .title-section {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000a8;
+  letter-spacing: 0.8px;
+}
+
+/* Background para página sobre mim */
+.background-about {
+  background: url("../images/banner_about.png") center no-repeat;
+}
+
+/* Background para página formação */
+.background-formation {
+  background: url("../images/banner_formation.png") center no-repeat;
+}
+
+/* Background para página portfólio */
+.background-portfolio {
+  background: url("../images/banner_portfolio.png") center no-repeat;
+}
+
+/* 
+  Media Queries para dispositivos pequenos
+  Alterando imagens para uma versão menor 
+*/
+@media (max-width: 575.98px) {
+  /* Background versão mobile para a página sobre mim */
+  .background-about {
+    background-image: url("../images/banner_about_sm.png");
+  }
+
+  /* Background versão mobile para a página formação */
+  .background-formation {
+    background-image: url("../images/banner_formation_sm.png");
+  }
+
+  /* Background versão mobile para a página portfólio */
+  .background-portfolio {
+    background-image: url("../images/banner_portfolio_sm.png");
+  }
+}
