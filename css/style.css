@@ -7,6 +7,13 @@ body {
   margin: 50px auto;
 }
 
+/* Bloco com background e arredondamento */
+.container-block {
+  background-color: #fbfbfb;
+  padding: 10px;
+  border-radius: 12px;
+}
+
 /*** Header */
 #mainHeader {
   background-color: #fdfdfd;

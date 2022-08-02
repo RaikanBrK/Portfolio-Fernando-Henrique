@@ -38,6 +38,11 @@
   margin-bottom: 20px;
 }
 
+/* Tirando margin do último elemento */
+#formation .progress:last-child {
+  margin-bottom: 0;
+}
+
 #formation .progress-bar {
   display: flex;
   width: 100%;
