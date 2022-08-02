@@ -33,24 +33,18 @@
 }
 
 /* Formação */
-#formation .list-group-item {
-  background-color: #fff8f8;
-  border-radius: 10px;
-
-  margin-top: 15px;
-  border: 1px solid #455a6412;
+#formation .progress {
+  height: 25px;
+  margin-bottom: 20px;
 }
 
-#formation .formation-item {
+#formation .progress-bar {
   display: flex;
   width: 100%;
+  flex-direction: row;
   justify-content: space-between;
-}
-
-#formation .title-item {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0.4px;
-  margin: 0;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #31aaf0;
+  color: white;
 }
